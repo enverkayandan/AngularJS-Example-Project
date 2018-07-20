@@ -1,0 +1,32 @@
+
+
+<style>
+a:visited {
+	color: black;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+</style>
+
+<div style="display: inline-block">
+
+	<div>
+		<label> <input #heroName />
+		</label>
+		<button
+			style="margin-left: 5px; border-radius: 7px; padding: .5em 1em;"
+			(click)="add(heroName.value); heroName.value=''">Add</button>
+	</div>
+
+	<ul class="heroes">
+		<li *ngFor="let hero of heroes"
+			[class.selected]="hero === selectedHero"><a
+			routerLink="/detail/{{hero.id}}" style="display: block;"> <span
+				class="badge">{{hero.id}}</span> {{hero.name}}
+		</a></li>
+	</ul>
+
+</div>

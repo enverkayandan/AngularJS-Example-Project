@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+	background-color: #000;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+}
+
+button {
+	position: relative;
+	transition: .3s ease;
+	background-color: #ffff00;
+	padding: 1em;
+	left: 0;
+	bottom: 0;
+	color: black;
+	font-weight: 900;
+	border-radius: 5px;
+	border: none;
+	color: black;
+}
+
+:focus {
+	outline: none;
+}
+
+button:hover {
+	color: white;
+	background-color: #ff00ff;
+	text-shadow: 3px 3px #260C0C;
+	left: 1px;
+	bottom: -1px;
+}
+
+input {
+	padding: .5em 0 .5em 0.5em;
+	border-radius: 15px;
+	transition: .3s ease;
+}
+
+input:focus {
+	outline: none;
+	border-bottom: 2px solid #1E90FF;
+	border-radius: 0;
+}

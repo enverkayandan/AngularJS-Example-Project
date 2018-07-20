@@ -1,0 +1,49 @@
+<link href="https://fonts.googleapis.com/css?family=Raleway|Metal+Mania"
+	rel="stylesheet">
+
+<style>
+a:visited {
+	color: black;
+}
+
+a {
+	vertical-align: middle;
+	display: inline-block;
+	color: black;
+	width: 10%;
+	text-align: center;
+	text-decoration: none;
+	padding: 1.5em 3em;
+	background-color: white;
+	border-radius: 5px;
+	color: black;
+	transition: .3s ease;
+	border: 3px solid black;
+	display: inline-block;
+}
+
+a:hover {
+	background-color: #980E0E;
+	font-weight: 900;
+	background-color: black;
+	border-color: white;
+	color: white;
+}
+</style>
+
+<h1>{{title}}</h1>
+<nav style="height: 5em;">
+	<div style="width: 50%; display: inline-block;">
+		<a style="min-width: 100px; float: right; text-align: center; margin-right: 5px;"
+			routerLink="/dashboard">Dashboard</a>
+	</div>
+	<div style="width: 50%; float: right; display: inline-block;">
+		<a style="min-width: 100px; margin-left: 5px;" routerLink="/heroes">Heroes</a>
+	</div>
+</nav>
+<router-outlet style="
+position: relative; 
+margin-left: 40%;"></router-outlet>
+<app-messages style="
+float: right; 
+vertical-align: text-bottom;"></app-messages>
